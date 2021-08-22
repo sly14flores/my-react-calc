@@ -1,0 +1,63 @@
+.history {
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 55px;
+  left: 55%;
+  height: 500px;
+  width: 400px;
+  padding: 10px;
+}
+
+.results {
+  padding-top: 10px;
+  font-size: 1.75rem;
+  color: gray;
+}
+
+.results p {
+  margin-top: 10px;
+  position: relative;
+}
+
+.history p {
+  position: relative;
+}
+
+.history p button {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  height: 30px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+.history p button:hover {
+  background-color: #eaeaea;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.results p button.result-button {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+.results p:hover button.result-button {
+  display: block;
+}
